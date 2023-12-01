@@ -186,3 +186,4 @@ console.log(exArray);
     const exArray2=[41, 25, 19, 58, 111];
     const result= calculateSum(exArray)
     console.log(result);
+    // RangeError: invalid string length.
