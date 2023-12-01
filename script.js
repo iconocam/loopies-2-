@@ -175,15 +175,31 @@ let exArray= [{ id: "42", name: "Bruce", occupation: "Knight", age: "41" }, { id
 console.log(exArray);
 
 
-    function calculateSum(exArray){
-        let sum=0
+    // function calculateSum(exArray){
+    //     let sum=0
     
-    for (let i=0; exArray.length; i++) {
-        sum += exArray[i];
-    }
-    return sum / exArray.length;
-    }
-    const exArray2=[41, 25, 19, 58, 111];
-    const result= calculateSum(exArray)
-    console.log(result);
+    // for (let i=0; exArray.length; i++) {
+    //     sum += exArray[i];
+    // }
+    // return sum / exArray.length;
+    // }
+    // const exArray2=[41, 25, 19, 58, 111];
+    // const result= calculateSum(exArray)
+    // console.log(result);
     // RangeError: invalid string length.
+
+    console.log(arrayNew);
+
+    const chunk1 = arrayA.slice(0, arrayA.length );
+    console.log(chunk1);
+
+    const chunk2 = arrayB.slice(0, arrayB.length);
+    console.log(chunk2);
+
+    let chunk3= arrayA.toUpperCase();
+    console.log(chunk3);
+
+    let chunk4= arrayB.toUpperCase();
+    console.log(chunk4);
+
+    // separated arrays into chunk, turned them uppercase as opposed to fist letter capitalized. i need help with accessing indexes :(
