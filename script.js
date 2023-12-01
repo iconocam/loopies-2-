@@ -202,4 +202,4 @@ console.log(exArray);
     let chunk4= arrayB.toUpperCase();
     console.log(chunk4);
 
-    // separated arrays into chunk, turned them uppercase as opposed to fist letter capitalized. i need help with accessing indexes :(
+    // separated arrays into separate chunk, turned them uppercase as opposed to fist letter capitalized. i need help with accessing indexes :(
