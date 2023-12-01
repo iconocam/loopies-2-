@@ -147,6 +147,12 @@ arrayNew.splice(1,0,Barry);
 
 console.log(arrayNew);
 
+let bilbo=({id: "7", name: "Bilbo", occupation: "None", age: "111"});
+arrayNew.push(bilbo);
+console.log(arrayNew);
+
+// i can't figure out how to put bilbo in array 1 at the end, he's in the wrong house and we cant kick him out. (0,1) is confusing to me still
+
 //tried to push bilbo to end of first array
 // arrayNew.push({id: "7", name: "Bilbo", occupation: "None", age: "111"} );
 // console.log(arrayNew);
@@ -162,4 +168,21 @@ console.log(arrayNew);
 // console.log(popped); // "tomato"
 // console.log(fruit); // ["apple", "orange", "banana"]
 
+// using example from page because i couldnt get mine to work
 
+let exArray= [{ id: "42", name: "Bruce", occupation: "Knight", age: "41" }, { id: "48", name: "Barry", occupation: "Runner", age: "25" }, { id: "57", name: "Bob", occupation: "Fry Cook", age: "19" }, { id: "63", name: "Blaine", occupation: "Quiz Master", age: "58" }, { id: "7", name: "Bilbo", occupation: "None", age: "111" }]
+
+console.log(exArray);
+
+
+    function calculateSum(exArray){
+        let sum=0
+    
+    for (let i=0; exArray.length; i++) {
+        sum += exArray[i];
+    }
+    return sum / exArray.length;
+    }
+    const exArray2=[41, 25, 19, 58, 111];
+    const result= calculateSum(exArray)
+    console.log(result);
