@@ -112,25 +112,54 @@ console.log(joinedArray);
 // console.log(united);
 
 const object = {
-    keyA:"ID , NAME , OCCUPATION, AGE;\n42, Bruce, Knight, 41 \n57, Bob, Fry Cook, 19 \n63, Blaine, Quiz Master,58 \n98, Bill, Doctor's Assistant, 26",
-    keyB: "Index, Mass (kg), Spring 1 (m), Spring 2 (m);\n1,0.00,0.050,0.050\n2,0.49,0.066,0.066\n3,0.98,0.087,0.080\n4,1.47,0.116,0.108\n5,1.96,0.142,0.138\n6,2.45,0.166,0.158\n7,2.94,0.193,0.174\n8,3.43,0.204,0.192\n9,3.92,0.226,0.205\n10,4.41,0.238,0.232"
+    arrayA:"ID , NAME , OCCUPATION, AGE;\n42, Bruce, Knight, 41 \n57, Bob, Fry Cook, 19 \n63, Blaine, Quiz Master,58 \n98, Bill, Doctor's Assistant, 26",
+    arrayB: "Index, Mass (kg), Spring 1 (m), Spring 2 (m);\n1,0.00,0.050,0.050\n2,0.49,0.066,0.066\n3,0.98,0.087,0.080\n4,1.47,0.116,0.108\n5,1.96,0.142,0.138\n6,2.45,0.166,0.158\n7,2.94,0.193,0.174\n8,3.43,0.204,0.192\n9,3.92,0.226,0.205\n10,4.41,0.238,0.232"
 
     
 
 };
 console.log(object)
-console.log(object.keyB);
-console.log(object.keyA);
+console.log(object.arrayB);
+console.log(object.arrayA);
 
 //key 1 and 2 for referencing the data
 
-let keyA ="ID , NAME , OCCUPATION, AGE;\n42, Bruce, Knight, 41 \n57, Bob, Fry Cook, 19 \n63, Blaine, Quiz Master,58 \n98, Bill, Doctor's Assistant, 26".toLowerCase();
-console.log(keyA);
+let arrayA ="ID , NAME , OCCUPATION, AGE;\n42, Bruce, Knight, 41 \n57, Bob, Fry Cook, 19 \n63, Blaine, Quiz Master,58 \n98, Bill, Doctor's Assistant, 26".toLowerCase();
+console.log(arrayA);
 
-let keyB= "Index, Mass (kg), Spring 1 (m), Spring 2 (m);\n1,0.00,0.050,0.050\n2,0.49,0.066,0.066\n3,0.98,0.087,0.080\n4,1.47,0.116,0.108\n5,1.96,0.142,0.138\n6,2.45,0.166,0.158\n7,2.94,0.193,0.174\n8,3.43,0.204,0.192\n9,3.92,0.226,0.205\n10,4.41,0.238,0.232".toLowerCase();
-console.log(keyB);
+let arrayB= "Index, Mass (kg), Spring 1 (m), Spring 2 (m);\n1,0.00,0.050,0.050\n2,0.49,0.066,0.066\n3,0.98,0.087,0.080\n4,1.47,0.116,0.108\n5,1.96,0.142,0.138\n6,2.45,0.166,0.158\n7,2.94,0.193,0.174\n8,3.43,0.204,0.192\n9,3.92,0.226,0.205\n10,4.41,0.238,0.232".toLowerCase();
+console.log(arrayB);
 
 console.log('i did so much but it repo broke :|');
 
+//put them to lowercase so far
+
+//putting them back in array in original order
+
+let arrayNew= [ arrayA , arrayB
+
+]
+
+console.log(arrayNew);
+
+let Barry= {id: "48", name: "Barry", occupation: "Runner", Age: "25"};
+arrayNew.splice(1,0,Barry);
+
+console.log(arrayNew);
+
+//tried to push bilbo to end of first array
+// arrayNew.push({id: "7", name: "Bilbo", occupation: "None", age: "111"} );
+// console.log(arrayNew);
+
+// // it says it removed 6? I'm so confused
+// let removed= keyA.slice(-1);
+// console.log(removed);
+
+// it says it removed 6? I'm so confused
+// let fruit = ['apple', 'orange', 'banana', 'tomato'];
+// let popped = fruit.pop();
+
+// console.log(popped); // "tomato"
+// console.log(fruit); // ["apple", "orange", "banana"]
 
 
